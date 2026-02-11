@@ -1,0 +1,90 @@
+name: quilt_flow_app
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: 1.0.8
+  get_it: 9.2.0
+  logger: 2.6.2
+  bloc: 9.1.0
+  flutter_bloc: 9.1.1
+  go_router: 17.0.1
+  dio: 5.9.0
+  firebase_messaging: 16.1.0
+  firebase_crashlytics: 5.0.6
+  flutter_secure_storage: 10.0.0
+  hive: 2.2.3
+  hive_flutter: 1.1.0
+  shared_preferences: 2.5.4
+  envied: 1.3.2
+  intl: 0.20.2
+  uuid: 4.5.2
+  typed_data: 1.4.0
+  mqtt5_client: 4.15.2
+  flutter_svg: 2.2.3
+  another_flushbar: 1.12.32
+  intl_utils: 2.8.13
+  loader_overlay: 5.0.0
+  firebase_core: 4.3.0
+  video_player: 2.10.1
+  equatable: 2.0.7
+  pinput: 6.0.1
+  timer_count_down: 2.2.2
+  flutter_native_splash: 2.4.7
+  lottie: 3.3.2
+  logging: 1.3.0
+  url_launcher: 6.3.2
+  flutter_timezone: 5.0.1
+  cached_network_image: 3.4.1
+  wakelock_plus: 1.4.0
+  visibility_detector: 0.4.0+2
+  webview_flutter: 4.13.1
+  shimmer: 3.0.0
+  readmore: 3.0.0
+  flutter_cache_manager: 3.4.1
+  image_picker: 1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: 2.10.4
+  envied_generator: 1.3.2
+  flutter_gen_runner: 5.12.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/videos/
+    - assets/lottie/
+    - assets/fonts/
+    - assets/images/
+
+  fonts:
+    - family: Outfit
+      fonts:
+        - asset: assets/fonts/Outfit-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Outfit-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Outfit-Bold.ttf
+          weight: 700
+
+flutter_intl:
+  enabled: true
+  class_name: S
+  main_locale: en
+
+flutter_gen:
+  output: lib/generated/
+  integrations:
+    flutter_svg: true

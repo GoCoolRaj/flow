@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "266760600532",
+    "project_id": "quilt-flow",
+    "storage_bucket": "quilt-flow.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266760600532:android:f279d7fb6e529bbef77441",
+        "android_client_info": {
+          "package_name": "com.quiltflow.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBia0K-DAUo59CPpfO6n-qLnjN_VBVYsDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
