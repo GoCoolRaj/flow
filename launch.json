@@ -1,0 +1,122 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "staging Debug",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--flavor",
+                "staging",
+                "-t",
+                "lib/main_staging.dart",
+                "--dart-define=FLAVOR=staging"
+            ]
+        },
+        {
+            "name": "staging Profile",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "args": [
+                "--flavor",
+                "staging",
+                "-t",
+                "lib/main_staging.dart",
+                "--dart-define=FLAVOR=staging"
+            ]
+        },
+        {
+            "name": "staging Release",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "args": [
+                "--flavor",
+                "staging",
+                "-t",
+                "lib/main_staging.dart",
+                "--dart-define=FLAVOR=staging"
+            ]
+        },
+        {
+            "name": "demo Debug",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--flavor",
+                "demo",
+                "-t",
+                "lib/main_demo.dart",
+                "--dart-define=FLAVOR=demo"
+            ]
+        },
+        {
+            "name": "demo Profile",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "args": [
+                "--flavor",
+                "demo",
+                "-t",
+                "lib/main_demo.dart",
+                "--dart-define=FLAVOR=demo"
+            ]
+        },
+        {
+            "name": "demo Release",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "args": [
+                "--flavor",
+                "demo",
+                "-t",
+                "lib/main_demo.dart",
+                "--dart-define=FLAVOR=demo"
+            ]
+        },
+        {
+            "name": "prod Debug",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--flavor",
+                "prod",
+                "-t",
+                "lib/main_prod.dart",
+                "--dart-define=FLAVOR=prod"
+            ]
+        },
+        {
+            "name": "prod Profile",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "args": [
+                "--flavor",
+                "prod",
+                "-t",
+                "lib/main_prod.dart",
+                "--dart-define=FLAVOR=prod"
+            ]
+        },
+        {
+            "name": "prod Release",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "args": [
+                "--flavor",
+                "prod",
+                "-t",
+                "lib/main_prod.dart",
+                "--dart-define=FLAVOR=prod"
+            ]
+        }
+    ]
+}

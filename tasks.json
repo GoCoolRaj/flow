@@ -1,0 +1,104 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Flutter Setup",
+      "type": "shell",
+      "command": "./flutter_setup.sh",
+      "options": {
+        "statusbar": {
+          "label": "$(tools) Flutter Setup",
+          "color": "#4CAF50",
+          "detail": "Clean cache, fetch packages, and install pods"
+        }
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Flutter Build",
+      "type": "shell",
+      "command": "./flutter_build.sh",
+      "args": [
+        "-f",
+        "${input:flavor}",
+        "-b",
+        "${input:buildType}",
+        "-p",
+        "${input:platform}",
+        "-t",
+        "${input:packageType}",
+        "-a",
+        "${input:action}"
+      ],
+      "problemMatcher": [],
+      "options": {
+        "statusbar": {
+          "label": "$(gear) Build Flutter",
+          "color": "#FF9800",
+          "detail": "Build APK / AAB / IPA based on selected flavor"
+        }
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "flavor",
+      "type": "pickString",
+      "description": "Select the build flavor (e.g. staging, prod)",
+      "options": [
+        "demo",
+        "prod",
+        "staging"
+      ],
+      "default": "demo"
+    },
+    {
+      "id": "buildType",
+      "type": "pickString",
+      "description": "Select the build mode",
+      "options": [
+        "debug",
+        "release"
+      ],
+      "default": "release"
+    },
+    {
+      "id": "platform",
+      "type": "pickString",
+      "description": "Target platform for the build",
+      "options": [
+        "android",
+        "ios"
+      ],
+      "default": "android"
+    },
+    {
+      "id": "action",
+      "type": "pickString",
+      "description": "What should the task do?",
+      "options": [
+        "build",
+        "run"
+      ],
+      "default": "build"
+    },
+    {
+      "id": "packageType",
+      "type": "pickString",
+      "description": "Android → apk / appbundle, iOS → ipa",
+      "options": [
+        "apk",
+        "appbundle",
+        "ipa"
+      ],
+      "default": "apk"
+    }
+  ]
+}
